@@ -926,10 +926,16 @@
     </footer>
 
     <!-- JavaScript -->
+    <!-- Load in this specific order: -->
+    <!-- 1. Notifications (no dependencies) -->
     <script src="notifications.js"></script>
+    <!-- 2. Supabase auth (defines isAuthenticated, getUserInfo, etc.) -->
     <script src="supabase-auth.js"></script>
+    <!-- 3. Auth UI (uses isAuthenticated from supabase-auth.js) -->
     <script src="auth-ui.js"></script>
+    <!-- 4. Data loader -->
     <script src="data-loader.js"></script>
+    <!-- 5. Main script -->
     <script src="script.js"></script>
 </body>
 

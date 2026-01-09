@@ -263,17 +263,3 @@ window.addEventListener('keydown', (event) => {
         closeEditModal();
     }
 });
-
-// ===================================
-// Initialize UI when this script loads
-// ===================================
-// Call updateAuthUI immediately to show login button
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        console.log('✅ auth-ui.js loaded, calling updateAuthUI');
-        updateAuthUI();
-    });
-} else {
-    console.log('✅ auth-ui.js loaded, calling updateAuthUI');
-    updateAuthUI();
-}
