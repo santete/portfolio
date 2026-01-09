@@ -51,7 +51,9 @@ async function signOut() {
         if (error) throw error;
 
         currentUser = null;
-        updateAuthUI();
+        if (typeof updateAuthUI === 'function') {
+            updateAuthUI();
+        }
         showNotification('Đã đăng xuất thành công!', 'success');
 
         // Reload page to reset state
@@ -104,7 +106,9 @@ function setupAuthListener() {
             currentUser = null;
         }
 
-        updateAuthUI();
+        if (typeof updateAuthUI === 'function') {
+            updateAuthUI();
+        }
     });
 }
 
@@ -140,8 +144,12 @@ async function initAuth() {
     // Setup listener
     setupAuthListener();
 
-    // Update UI
-    updateAuthUI();
+    // Update UI (only if function exists)
+    if (typeof updateAuthUI === 'function') {
+        updateAuthUI();
+    } else {
+        console.warn('⚠️ updateAuthUI not loaded yet');
+    }
 }
 
 // Auto-initialize when script loads
