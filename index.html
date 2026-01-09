@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio của Software Architect - Chuyên gia thiết kế và phát triển hệ thống phần mềm">
+    <meta name="keywords" content="Software Architect, SA, Portfolio, CV, System Design">
+    <title>Nguyễn Văn A - Software Architect Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">SA Portfolio</div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+                <li><a href="#projects" class="nav-link">Dự án</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-subtitle">👋 Xin chào, tôi là</p>
+            <h1 class="hero-title">Nguyễn Văn A</h1>
+            <h2 class="hero-subtitle" style="font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1.5rem;">
+                <span class="text-gradient">Software Architect</span>
+            </h2>
+            <p class="hero-description">
+                Với hơn 10 năm kinh nghiệm trong thiết kế và phát triển hệ thống phần mềm quy mô lớn,
+                tôi chuyên về kiến trúc microservices, cloud computing và các giải pháp công nghệ tiên tiến.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Liên hệ ngay
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-briefcase"></i>
+                    Xem dự án
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-alt" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Giới thiệu</h2>
+                <p class="section-description">
+                    Tìm hiểu thêm về hành trình và đam mê của tôi trong lĩnh vực công nghệ
+                </p>
+            </div>
+
+            <div class="card" style="max-width: 900px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
+                    <div style="text-align: center;">
+                        <div
+                            style="width: 200px; height: 200px; background: var(--primary-gradient); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 5rem; color: white; box-shadow: var(--shadow-xl);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 1.5rem;">Software Architect & Technical Leader</h3>
+                        <p style="margin-bottom: 1rem;">
+                            Tôi là một Software Architect với niềm đam mê thiết kế và xây dựng các hệ thống phần mềm
+                            có khả năng mở rộng cao, hiệu suất tối ưu và bảo mật vững chắc.
+                        </p>
+                        <p style="margin-bottom: 1rem;">
+                            Chuyên môn của tôi bao gồm thiết kế kiến trúc microservices, triển khai cloud-native
+                            applications,
+                            và dẫn dắt các đội ngũ kỹ thuật để đạt được các mục tiêu kinh doanh.
+                        </p>
+                        <p>
+                            Tôi luôn cập nhật các công nghệ mới nhất và áp dụng các best practices để đảm bảo
+                            chất lượng sản phẩm cao nhất.
+                        </p>
+
+                        <div style="margin-top: 2rem; display: flex; gap: 2rem; flex-wrap: wrap;">
+                            <div>
+                                <h4 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.25rem;">10+
+                                </h4>
+                                <p style="margin: 0; color: var(--text-muted);">Năm kinh nghiệm</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.25rem;">50+
+                                </h4>
+                                <p style="margin: 0; color: var(--text-muted);">Dự án hoàn thành</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.25rem;">15+
+                                </h4>
+                                <p style="margin: 0; color: var(--text-muted);">Công nghệ thành thạo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kỹ năng & Công nghệ</h2>
+                <p class="section-description">
+                    Các công nghệ và kỹ năng mà tôi sử dụng để xây dựng các giải pháp xuất sắc
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Architecture & Design -->
+                <div class="card skill-category">
+                    <h3><i class="fas fa-drafting-compass" style="color: var(--primary-color);"></i> Kiến trúc & Thiết
+                        kế</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Microservices Architecture</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Domain-Driven Design</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Event-Driven Architecture</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">System Design</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="93"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Technologies -->
+                <div class="card skill-category">
+                    <h3><i class="fas fa-server" style="color: var(--primary-color);"></i> Backend Technologies</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Java / Spring Boot</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Node.js / Express</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python / Django</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">.NET Framework / ASP.NET MVC</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Go</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="card skill-category">
+                    <h3><i class="fas fa-cloud" style="color: var(--primary-color);"></i> Cloud & DevOps</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">AWS</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Docker / Kubernetes</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CI/CD (Jenkins, GitLab CI)</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="87"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Terraform / Infrastructure as Code</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="card skill-category">
+                    <h3><i class="fas fa-database" style="color: var(--primary-color);"></i> Databases</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PostgreSQL / MySQL</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="93"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Redis / Caching</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">MS SQL Server</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Elasticsearch</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="78"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Queues & Streaming -->
+                <div class="card skill-category">
+                    <h3><i class="fas fa-stream" style="color: var(--primary-color);"></i> Message Queues</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Apache Kafka</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">RabbitMQ</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">AWS SQS/SNS</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="82"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership & Soft Skills -->
+                <div class="card skill-category">
+                    <h3><i class="fas fa-users" style="color: var(--primary-color);"></i> Leadership & Soft Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Team Leadership</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Agile / Scrum</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Technical Documentation</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Stakeholder Management</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Domains -->
+                <div class="card skill-category">
+                    <h3><i class="fas fa-briefcase" style="color: var(--primary-color);"></i> Business Domains</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Authentication & Authorization</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">ERP Systems</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">E-Commerce & Sales</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Digital Marketing Platforms</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Telecommunications (Radius AAA)</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="82"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kinh nghiệm làm việc</h2>
+                <p class="section-description">
+                    Hành trình phát triển sự nghiệp của tôi trong lĩnh vực công nghệ
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card">
+                        <span class="timeline-date">2020 - Hiện tại</span>
+                        <h3 class="timeline-title">Principal Software Architect</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> Tech Innovation Corp</p>
+                        <p class="timeline-description">
+                            Dẫn dắt đội ngũ kiến trúc sư phần mềm trong việc thiết kế và triển khai các hệ thống
+                            microservices quy mô lớn. Chịu trách nhiệm về kiến trúc tổng thể của nền tảng cloud-native
+                            phục vụ hơn 10 triệu người dùng. Tối ưu hóa hiệu suất hệ thống, giảm 40% chi phí
+                            infrastructure.
+                        </p>
+                        <div class="project-tags" style="margin-top: 1rem;">
+                            <span class="tag">Microservices</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Kafka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card">
+                        <span class="timeline-date">2017 - 2020</span>
+                        <h3 class="timeline-title">Senior Software Architect</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> Digital Solutions Ltd</p>
+                        <p class="timeline-description">
+                            Thiết kế và triển khai kiến trúc cho các ứng dụng enterprise. Dẫn dắt quá trình chuyển đổi
+                            từ monolith sang microservices, cải thiện khả năng mở rộng và bảo trì. Xây dựng CI/CD
+                            pipeline
+                            và áp dụng DevOps practices, tăng 60% tốc độ deployment.
+                        </p>
+                        <div class="project-tags" style="margin-top: 1rem;">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card">
+                        <span class="timeline-date">2014 - 2017</span>
+                        <h3 class="timeline-title">Software Architect</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> Global Tech Solutions</p>
+                        <p class="timeline-description">
+                            Thiết kế kiến trúc cho các dự án web và mobile applications. Tư vấn về công nghệ và
+                            best practices cho các đội phát triển. Xây dựng framework nội bộ giúp tăng 50% năng suất
+                            phát triển. Mentor cho junior và mid-level developers.
+                        </p>
+                        <div class="project-tags" style="margin-top: 1rem;">
+                            <span class="tag">Java</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card">
+                        <span class="timeline-date">2011 - 2014</span>
+                        <h3 class="timeline-title">Senior Software Engineer</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> Software Development Co</p>
+                        <p class="timeline-description">
+                            Phát triển và maintain các ứng dụng enterprise. Tham gia thiết kế database schema và
+                            API design. Optimize performance và troubleshoot các vấn đề production. Collaborate với
+                            cross-functional teams để deliver high-quality products.
+                        </p>
+                        <div class="project-tags" style="margin-top: 1rem;">
+                            <span class="tag">Java EE</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dự án nổi bật</h2>
+                <p class="section-description">
+                    Một số dự án tiêu biểu mà tôi đã thiết kế và triển khai
+                </p>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="microservices">Microservices</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="card project-card" data-category="cloud microservices">
+                    <div class="project-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="project-title">Cloud E-Commerce Platform</h3>
+                    <p class="project-description">
+                        Nền tảng thương mại điện tử quy mô lớn với kiến trúc microservices, xử lý hơn 1 triệu
+                        giao dịch/ngày. Triển khai trên AWS với auto-scaling và high availability.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Chi tiết
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card project-card" data-category="microservices">
+                    <div class="project-image" style="background: var(--secondary-gradient);">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3 class="project-title">Banking Microservices System</h3>
+                    <p class="project-description">
+                        Hệ thống ngân hàng core với 20+ microservices, đảm bảo ACID transactions và
+                        compliance với các tiêu chuẩn bảo mật ngân hàng. Uptime 99.99%.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">RabbitMQ</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Redis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Chi tiết
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card project-card" data-category="cloud enterprise">
+                    <div class="project-image" style="background: var(--accent-gradient);">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="project-title">Real-time Analytics Platform</h3>
+                    <p class="project-description">
+                        Nền tảng phân tích dữ liệu real-time xử lý hàng tỷ events/ngày. Sử dụng event-driven
+                        architecture và stream processing để cung cấp insights tức thời.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Kafka</span>
+                        <span class="tag">Elasticsearch</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">AWS Lambda</span>
+                        <span class="tag">Kinesis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Chi tiết
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card project-card" data-category="enterprise">
+                    <div class="project-image" style="background: var(--success-gradient);">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3 class="project-title">Healthcare Management System</h3>
+                    <p class="project-description">
+                        Hệ thống quản lý bệnh viện tích hợp với EMR, appointment scheduling, và billing.
+                        Tuân thủ HIPAA và các tiêu chuẩn bảo mật y tế.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">FHIR</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Chi tiết
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card project-card" data-category="cloud">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="project-title">Mobile Backend as a Service</h3>
+                    <p class="project-description">
+                        Platform BaaS cung cấp authentication, database, storage, và push notifications
+                        cho mobile apps. Hỗ trợ hơn 500 ứng dụng với 5M+ users.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">GraphQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Chi tiết
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card project-card" data-category="microservices enterprise">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="project-title">Logistics & Supply Chain Platform</h3>
+                    <p class="project-description">
+                        Hệ thống quản lý logistics end-to-end với real-time tracking, route optimization,
+                        và warehouse management. Tích hợp với 50+ partners.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Go</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">gRPC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Học vấn & Chứng chỉ</h2>
+                <p class="section-description">
+                    Nền tảng học thuật và các chứng chỉ chuyên môn
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Education -->
+                <div class="card">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--primary-gradient); border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-graduation-cap" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3>Thạc sĩ Khoa học Máy tính</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
+                        Đại học Bách Khoa
+                    </p>
+                    <p style="color: var(--text-muted); margin: 0;">2009 - 2011</p>
+                </div>
+
+                <div class="card">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--secondary-gradient); border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-university" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3>Cử nhân Công nghệ Thông tin</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
+                        Đại học Quốc Gia
+                    </p>
+                    <p style="color: var(--text-muted); margin: 0;">2005 - 2009</p>
+                </div>
+
+                <!-- Certifications -->
+                <div class="card">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--accent-gradient); border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-certificate" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3>AWS Solutions Architect Professional</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
+                        Amazon Web Services
+                    </p>
+                    <p style="color: var(--text-muted); margin: 0;">2022</p>
+                </div>
+
+                <div class="card">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--success-gradient); border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-award" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3>Certified Kubernetes Administrator</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
+                        Cloud Native Computing Foundation
+                    </p>
+                    <p style="color: var(--text-muted); margin: 0;">2021</p>
+                </div>
+
+                <div class="card">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--primary-gradient); border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-certificate" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3>Google Cloud Professional Architect</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
+                        Google Cloud
+                    </p>
+                    <p style="color: var(--text-muted); margin: 0;">2020</p>
+                </div>
+
+                <div class="card">
+                    <div
+                        style="width: 60px; height: 60px; background: var(--secondary-gradient); border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <i class="fas fa-award" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3>TOGAF 9 Certified</h3>
+                    <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
+                        The Open Group
+                    </p>
+                    <p style="color: var(--text-muted); margin: 0;">2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Liên hệ</h2>
+                <p class="section-description">
+                    Hãy kết nối với tôi để thảo luận về các cơ hội hợp tác
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>nguyenvana@email.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Điện thoại</h4>
+                            <p>+84 123 456 789</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Địa chỉ</h4>
+                            <p>Hà Nội, Việt Nam</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/nguyenvana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form card" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" id="name" class="form-control" placeholder="Nhập họ tên của bạn" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Nhập email của bạn" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Tiêu đề</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Tiêu đề tin nhắn" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Nội dung</label>
+                        <textarea id="message" class="form-control" placeholder="Nhập nội dung tin nhắn..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Gửi tin nhắn
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Stack Overflow">
+                    <i class="fab fa-stack-overflow"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Medium">
+                    <i class="fab fa-medium"></i>
+                </a>
+            </div>
+
+            <p class="footer-text">
+                © <span id="currentYear"></span> Nguyễn Văn A - Software Architect. All rights reserved.
+            </p>
+            <p class="footer-text">
+                Designed & Built with <i class="fas fa-heart" style="color: #f5576c;"></i> using HTML, CSS & JavaScript
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="data-loader.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
