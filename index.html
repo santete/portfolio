@@ -18,6 +18,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- Supabase Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,6 +41,9 @@
             </ul>
 
             <div style="display: flex; align-items: center; gap: 1rem;">
+                <!-- Authentication UI Container -->
+                <div id="authContainer"></div>
+
                 <button class="theme-toggle" id="themeToggle">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -920,6 +926,9 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="notifications.js"></script>
+    <script src="supabase-auth.js"></script>
+    <script src="auth-ui.js"></script>
     <script src="data-loader.js"></script>
     <script src="script.js"></script>
 </body>
